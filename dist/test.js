@@ -66,6 +66,8 @@ let test2 = [
         age: [11, 22, 3, 4, 2, 21]
     }
 ];
+const emp = { name: "Alice", role: "Developer" };
+const emp1 = { name: "Alice", role: "Developer" };
 console.log(myObject.name);
 console.log(myObject.address);
 console.log(myObject.languages);

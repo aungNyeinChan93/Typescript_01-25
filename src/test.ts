@@ -34,7 +34,6 @@ type myCustomeType1 = {
 }
 
 
-
 let age: number | string | boolean | myCustomeType1 = 4;
 
 age = 'dsfasd';

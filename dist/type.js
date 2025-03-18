@@ -18,8 +18,15 @@ let orType1 = {
     description: 'post one desc',
     isActive: false
 };
+let userAction = false;
+let userAction1 = true;
+let userAction2 = null;
+let userAction3 = '';
+let userAction4 = undefined;
+let userAction5 = 'default';
 console.log(post);
 console.log(sample);
 console.log(combine);
 console.log(orType);
 console.log(orType1);
+console.log(userAction, userAction1, userAction2, userAction3, userAction4, userAction5);

@@ -32,6 +32,40 @@ let myObject = {
         { name: 'c3', type: 'normal', active: false },
     ]
 };
+let users = [];
+users[0] = 'aungaung';
+users[3] = 'koko';
+let book = { name: '', author: '' };
+book.name = 'Marvel';
+book.author = 'stanLee';
+let macBook = {
+    model: 'mac book air',
+    year: 2018
+};
+macBook.year = 2019;
+let testObj = {
+    name: 'testObj'
+};
+let myMac = {
+    model: 'something',
+    year: 2024
+};
+myMac.year = 2025;
+let myMac2 = {
+    model: 'something',
+    year: 2027
+};
+myMac2.year = 2021;
+let test2 = [
+    {
+        name: 'test-1',
+        age: 21
+    },
+    {
+        name: 'test-2',
+        age: [11, 22, 3, 4, 2, 21]
+    }
+];
 console.log(myObject.name);
 console.log(myObject.address);
 console.log(myObject.languages);
@@ -42,3 +76,9 @@ console.log(myObject.students[0]);
 console.log(myObject.students[0].name);
 console.log(myObject.customers[2].name);
 console.log(myObject.customers[2].type);
+console.log(users);
+console.log(book);
+console.log(macBook.year);
+console.log(myMac.year);
+console.log(myMac2.year);
+console.log(test2[1]);

@@ -8,13 +8,14 @@ let manU = {
 manU.Champions_League = 30;
 
 
-let realMadrid: { name: string, Champions_League: number | '' } = {
-    name: '',
-    Champions_League: ''
-};
+let realMadrid: { name: string, Champions_League: number | '' };
+
+realMadrid = {
+    name: "test",
+    Champions_League: 60
+}
 realMadrid.name = 'UEFA King';
 realMadrid.Champions_League = 15;
-
 
 interface Arsenal {
     name: string

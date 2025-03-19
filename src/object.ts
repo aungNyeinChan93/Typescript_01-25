@@ -18,7 +18,7 @@ realMadrid.Champions_League = 15;
 
 interface Arsenal {
     name: string
-    Champions_League: number | null
+    Champions_League: null
 }
 let arsenal: Arsenal = {
     name: 'Gunner',

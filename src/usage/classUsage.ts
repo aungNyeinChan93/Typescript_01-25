@@ -14,8 +14,13 @@ import { Animal, Dog, Logger } from '../classes/classes';
 const Max: Dog = new Dog('Max', 3, 'Bulldog');
 const Jack: Dog = new Dog('Jack', 5, 'Puppy');
 const Charlie: Dog = new Dog('Charlie', 2, 'Beagle');
+
 Max.bark(); // Output: Max is Woof! Woof
+console.log(Max); // Output: Dog { name: 'Max', age: 3, species: 'Bulldog' }
+Max.changeAge(4); // Changing age using the method from Dog class
+console.log(Max.getAge()); // Output: 4
 console.log(Max);
+// Max.species = 'Labrador'; // Error: Cannot assign to 'species' because it is a read-only property.
 
 const myLogger = new Logger<string>('Hello, TypeScript!');
 myLogger.log(); // Output: Log: Hello, TypeScript!

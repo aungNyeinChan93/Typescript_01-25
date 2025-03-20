@@ -22,6 +22,9 @@ class Dog extends Animal {
     bark() {
         console.log(`${this.name} is Woof! Woof`);
     }
+    changeAge(age) {
+        this.setAge(age);
+    }
 }
 exports.Dog = Dog;
 class Logger {

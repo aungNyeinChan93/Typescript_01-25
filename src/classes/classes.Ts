@@ -36,6 +36,9 @@ export class Dog extends Animal implements DogInterface {
     bark(): void {
         console.log(`${this.name} is Woof! Woof`);
     }
+    changeAge(age: number): void {
+        this.setAge(age); // Accessing private method from the parent class
+    }
 }
 
 export class Logger<T> {

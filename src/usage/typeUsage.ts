@@ -1,4 +1,4 @@
-import { Logger, BigBoolean, UserInformations } from '../types/allTypes';
+import { Logger, BigBoolean, UserInformations, About } from '../types/allTypes';
 
 // Usage of Logger type
 let logger: Logger = {
@@ -101,3 +101,14 @@ const john: Info<string, number> = {
     name: 'John', age: 30, address: 'New York'
 }
 aboutMe(john); // Output: My name is John, I am 30 years old, and I live in New York.
+
+
+const myBio: About<string> = {
+    bio: 'lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+}
+console.log(myBio.bio); // Output: lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+const myBio1: About<number> = {
+    bio: 12345,
+}
+console.log(myBio1.bio); // Output: 12345

@@ -75,3 +75,11 @@ const john = {
     name: 'John', age: 30, address: 'New York'
 };
 aboutMe(john);
+const myBio = {
+    bio: 'lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+};
+console.log(myBio.bio);
+const myBio1 = {
+    bio: 12345,
+};
+console.log(myBio1.bio);

@@ -46,4 +46,7 @@ export type UserInformations = {
     readonly website?: string;
 }
 
+export type About<T> = {
+    bio: T,
+}
 

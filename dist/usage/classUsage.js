@@ -1,0 +1,20 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const classes_1 = require("../classes/classes");
+const Max = new classes_1.Dog('Max', 3, 'Bulldog');
+const Jack = new classes_1.Dog('Jack', 5, 'Puppy');
+const Charlie = new classes_1.Dog('Charlie', 2, 'Beagle');
+Max.bark();
+console.log(Max);
+const myLogger = new classes_1.Logger('Hello, TypeScript!');
+myLogger.log();
+const myLogger2 = new classes_1.Logger(12345);
+myLogger2.log();
+const dogs = [];
+dogs.push(Max, Jack, Charlie);
+console.log(dogs);
+const dogName = (dogs) => {
+    return dogs.map(dog => dog.name);
+};
+let dogNameResult = dogName(dogs);
+console.log(dogNameResult);

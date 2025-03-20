@@ -81,9 +81,23 @@ let susu: UserInformations = {
 console.log(susu);
 console.log(susu.name);
 
+// type with generics
+// Generics allow you to create reusable components that can work with any data type.
+// They are like templates that can be filled with different types when you use them.
+// This is useful when you want to create functions, classes, or interfaces that can work with multiple types without losing type safety.
+// For example, you can create a function that takes an array of any type and returns the first element of that array.
+// This way, you can use the same function for arrays of numbers, strings, or any other type without having to write separate functions for each type.  
 
+type Info<T, V> = {
+    name: T;
+    age: V;
+    address: T;
+}
 
-
-
-
-
+const aboutMe = (info: Info<string, number>): void => {
+    console.log(`My name is ${info.name}, I am ${info.age} years old, and I live in ${info.address}.`);
+}
+const john: Info<string, number> = {
+    name: 'John', age: 30, address: 'New York'
+}
+aboutMe(john); // Output: My name is John, I am 30 years old, and I live in New York.

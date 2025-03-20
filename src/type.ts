@@ -55,3 +55,6 @@ console.log(combine);
 console.log(orType);
 console.log(orType1);
 console.log(userAction, userAction1, userAction2, userAction3, userAction4, userAction5);
+
+
+

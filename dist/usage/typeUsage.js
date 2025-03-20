@@ -68,3 +68,10 @@ let susu = {
 };
 console.log(susu);
 console.log(susu.name);
+const aboutMe = (info) => {
+    console.log(`My name is ${info.name}, I am ${info.age} years old, and I live in ${info.address}.`);
+};
+const john = {
+    name: 'John', age: 30, address: 'New York'
+};
+aboutMe(john);

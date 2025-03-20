@@ -23,7 +23,6 @@ export type Logger = {
 
 }
 
-
 export type BigBoolean = false | true | 'true' | 'false' | 0 | 1 | '1' | '0' | boolean | null | '' | undefined;
 
 export type UserInformations = {
@@ -46,4 +45,5 @@ export type UserInformations = {
     bio?: string | number | null | undefined;
     readonly website?: string;
 }
+
 

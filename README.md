@@ -1,4 +1,4 @@
-# CodeHub Tutorial 01
+# Typescript Tutorial-01
 
 This repository contains TypeScript code examples and exercises to help you learn and practice TypeScript concepts. Whether you're a beginner or looking to enhance your TypeScript skills, this project provides a structured and hands-on approach.
 
@@ -120,7 +120,7 @@ Max.bark(); // Output: Max is Woof! Woof
 
 Example:
 
-```
+```typescript
 const myLogger = new Logger<string>("Hello, TypeScript!");
 myLogger.log(); // Output: Log: Hello, TypeScript!
 
@@ -131,7 +131,7 @@ myLogger.log(); // Output: Log: Hello, TypeScript!
 Extending Interfaces: Interfaces like HumanWorker extend BaseWorker to add more functionality.
 Usage in Classes: The Boy class implements the Human interface.
 
-```
+```typescript
 interface Human {
     readonly name: string;
     eat(): void;
@@ -145,7 +145,7 @@ Demonstrates the use of numeric and string enums for better code readability.
 
 Example:
 
-```
+```typescript
 enum Status {
     Pending,
     InProgress,
@@ -161,7 +161,7 @@ Demonstrates fixed-length arrays with specific types for each index.
 
 Example:
 
-```
+```typescript
 let rates: [string, number, any[]?];
 rates = ["mgmg", 12, []];
 
@@ -173,21 +173,13 @@ Functions like dogName demonstrate dependency injection by accepting typed param
 
 Example:
 
-```
+```typescript
 const dogName = (dogs: Dog[]): string[] => dogs.map(dog => dog.name);
 
 ```
 
-### 7. Utility Types
 
-Demonstrates the use of custom types and type intersections.
-
-Example:
-
-```
-
+## Link
 This [README.md](http://_vscodecontentref_/3) file consolidates all the information into a single, well-structured document. Let me know if you need further adjustments!
 
 
-
-```
